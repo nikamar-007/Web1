@@ -161,6 +161,7 @@ th, td {
     border-bottom: 1px solid #E8D9A5;
     font-size: 1.1rem;
     overflow-wrap: break-word;
+    word-break: break-word;
     hyphens: auto;
 }
 
@@ -241,18 +242,19 @@ footer {
     }
     tr {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         background-color: #FFF8E1;
         border: 1px solid #E8D9A5;
         border-radius: 0.5rem;
-        padding: 10px;
+        padding: 12px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
     td {
         display: block;
         padding: 8px 10px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         overflow-wrap: break-word;
+        word-break: break-word;
         hyphens: auto;
         border-bottom: none;
         text-align: left;
@@ -262,8 +264,8 @@ footer {
         font-weight: 600;
         color: #4A7043;
         display: block;
-        margin-bottom: 5px;
-        font-size: 0.95rem;
+        margin-bottom: 4px;
+        font-size: 0.9rem;
     }
     nav {
         flex-direction: column;
@@ -287,5 +289,23 @@ footer {
     }
     .place img {
         height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    table {
+        padding: 0 5px;
+    }
+    tr {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+    td {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+    td::before {
+        font-size: 0.85rem;
+        margin-bottom: 3px;
     }
 }
