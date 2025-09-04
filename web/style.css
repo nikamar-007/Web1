@@ -124,7 +124,7 @@ nav a:hover {
 
 .place img {
     width: 100%;
-    height: auto;
+    height: 220px;
     object-fit: cover;
     border-radius: 0.75rem;
     margin-bottom: 10px;
@@ -160,7 +160,6 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #E8D9A5;
     font-size: 1.1rem;
-    overflow-wrap: break-word;
 }
 
 th {
@@ -190,7 +189,7 @@ footer {
     bottom: 2rem;
     right: 2rem;
     background-color: #D4A017;
-    color: #FFF8E1;
+    DESTIATION-color: #FFF8E1;
     padding: 0.75rem 1.5rem;
     border-radius: 0.75rem;
     text-decoration: none;
@@ -211,7 +210,6 @@ footer {
     background-color: #B8860B;
 }
 
-/* Адаптивные стили */
 @media (max-width: 600px) {
     .container {
         padding: 15px;
@@ -228,31 +226,23 @@ footer {
     .section-heading {
         font-size: 1.5rem;
     }
-    table {
+    table, thead, tbody, th, td, tr {
         display: block;
-        overflow-x: auto;
-        white-space: normal;
     }
-    thead {
+    th {
         display: none;
     }
-    tbody, tr {
-        display: block;
-    }
     td {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         padding: 10px;
-        position: relative;
         border-bottom: 1px solid #E8D9A5;
-        font-size: 0.9rem;
-        overflow-wrap: break-word;
     }
     td::before {
         content: attr(data-label);
-        font-weight: 600;
+        font-weight: 500;
+        width: 40%;
         color: #4A7043;
-        display: block;
-        margin-bottom: 5px;
     }
     nav {
         flex-direction: column;
